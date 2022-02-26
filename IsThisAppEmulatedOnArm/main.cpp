@@ -34,11 +34,6 @@ int main()
 			(nNativeMachine == IMAGE_FILE_MACHINE_ARM64) ? TRUE : FALSE
 		};
 
-		const char* IsEmulated
-		{
-			fIsMachineARM64 ? "FOO" : "BAR"
-		};
-
 		const char* msg{ (fIsMachineARM64) ? "emulated on ARM64" : "natively on non-ARM64 device" };
 
 		cout << "This "
